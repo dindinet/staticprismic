@@ -10,7 +10,7 @@ export async function load(){
           }
         }
       );
-      const result = await response.json();
+      const result = await response.text();
     return{
             whypage:result
     };
