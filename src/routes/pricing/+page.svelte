@@ -1,3 +1,5 @@
+<script>
+    export let data;
+</script>
 
-
-<h2>Pricing</h2>
+{@html data.pricingpage}

@@ -1,2 +1,5 @@
+<script>
+    export let data;
+</script>
 
-<h2>Product</h2>
+{@html data.productpage}
