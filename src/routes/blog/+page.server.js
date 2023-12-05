@@ -1,6 +1,7 @@
 export async function load(){
     const response = await fetch(
-        'https://codegen.plasmic.app/api/v1/loader/html/preview/tTqxxSNNPLamhhbvK9V5UT/Blog?hydrate=1&embedHydrate=1',
+        //'https://codegen.plasmic.app/api/v1/loader/html/preview/tTqxxSNNPLamhhbvK9V5UT/Blog?hydrate=1&embedHydrate=1',
+        'https://codegen.plasmic.app/api/v1/loader/html/preview/tTqxxSNNPLamhhbvK9V5UT/Header?hydrate=1&embedHydrate=1',
         {
           headers: {
             // Your project ID and public API token
