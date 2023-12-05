@@ -3,4 +3,5 @@
 </script>
 
 <div>{@html data.plasmic}</div>
-<center><h2>Bloggety Blog</h2></center>
+<section><center><h2>Bloggety Blog</h2></center></section>
+<section><div>{@html data.plasfooter}</div></section>
