@@ -5,7 +5,7 @@ export async function load(){
       );
       const result = await response.text();
     return{
-            vevpage:result.replaceAll('</head>','</head><style>#vevwatermark{display:none;}</style>')
+            vevpage:result.replaceAll('</body>','<style>#vevwatermark{display:none;}</style></body>')
     };
 }
 
