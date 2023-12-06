@@ -9,7 +9,7 @@ export async function load(){
       //const vevresult = result.replaceAll('</body>','<style>#vevwatermark{display:none;}</style></body>')
       
     return{
-            canvasite:canvaresult
+            canvasite:canvaresult.replaceAll('icon" href="','icon" href="https://brandmessage.my.canva.site/')
     };
 }
 
