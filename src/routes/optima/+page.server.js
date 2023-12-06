@@ -12,7 +12,7 @@ export async function load(){
       );
       const result = await response.text();
     return{
-            optimapage:result.replaceAll('/assets/','https://www.optimadesign.co.uk/assets/').replaceAll('href="/','href="https://www.optimadesign.co.uk/')
+            optimapage:result.replaceAll('/assets/','https://www.optimadesign.co.uk/assets/').replaceAll('href="/','href="https://www.optimadesign.co.uk/').replaceAll('/images/jcogs_img/','https://www.optimadesign.co.uk//images/jcogs_img/')
     };
 }
 
