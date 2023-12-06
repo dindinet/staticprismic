@@ -2,7 +2,7 @@ export const prerender = true;
 
 export async function load(){
     const response = await fetch(
-        'https://a-dindinet.vev.site/dindinet/',
+        'https://a-dindinet.vev.site/review/',
         {}
       );
       const vevresult = await response.text();
