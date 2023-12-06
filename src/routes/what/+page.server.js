@@ -12,7 +12,7 @@ export async function load(){
       );
       const result = await response.text();
     return{
-            whypage:result
+            whatpage:result
     };
 }
 
