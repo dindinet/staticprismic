@@ -5,8 +5,8 @@ export async function load(){
         'https://a-dindinet.vev.site/dindinet/',
         {}
       );
-      const result = await response.text();
-      const vevresult = result.replaceAll('</body>','<style>#vevwatermark{display:none;}</style></body>')
+      const vevresult = await response.text();
+      //const vevresult = result.replaceAll('</body>','<style>#vevwatermark{display:none;}</style></body>')
       
     return{
             vevpage:vevresult
