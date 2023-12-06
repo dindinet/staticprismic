@@ -3,4 +3,3 @@
 </script>
 
 {@html data.vevpage}
-<style>#vevwatermark{display:none;}</style>
