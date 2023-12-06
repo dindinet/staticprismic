@@ -28,5 +28,5 @@ export async function load(){
        plasmic:result.html, wixpage:wixresult
     };
 }
-//https://dklongley.wixstudio.io/papo
+//
 
