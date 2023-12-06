@@ -1,6 +1,6 @@
 export async function load(){
     const response = await fetch(
-        'https://primo-startup-vercel.vercel.app/why',
+      'https://sass-wh3p8.vercel.app/',
         {
           //headers: {
             // Your project ID and public API token
