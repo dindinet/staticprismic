@@ -10,9 +10,9 @@ export async function load(){
           //}
         }
       );
-      const paporesult = await response.text().replaceAll('href="/build/_assets', 'href="https://saas-wh3p8.wstd.io/build/_assets');
+      const paporesult = await response.text();
     return{
-            papopage:paporesult
+            papopage:paporesult.replaceAll('href="/build/_assets', 'href="https://saas-wh3p8.wstd.io/build/_assets')
     };
 }
 
