@@ -12,7 +12,7 @@ export async function load(){
       );
       const result = await response.text();
     return{
-            optimapage:result.replaceAll('/assets/','www.optimadesign.co.uk/assets/')
+            optimapage:result.replaceAll('/assets/','https://www.optimadesign.co.uk/assets/')
     };
 }
 
