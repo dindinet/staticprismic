@@ -1,4 +1,17 @@
 export async function load(){
+  const plasmicresponse = await fetch(
+    //'https://codegen.plasmic.app/api/v1/loader/html/preview/tTqxxSNNPLamhhbvK9V5UT/Blog?hydrate=1&embedHydrate=1',
+    'https://codegen.plasmic.app/api/v1/loader/html/preview/tTqxxSNNPLamhhbvK9V5UT/Header?hydrate=1&embedHydrate=1',
+    {
+      headers: {
+        // Your project ID and public API token
+        'x-plasmic-api-project-tokens': 'tTqxxSNNPLamhhbvK9V5UT:BFywrK12CIOe9GdI57EfvyxjW7xEs71PPMsXuClOsEgDAxUttSe822OGURTYgOQOTXiI4HudjQYhPEFyy46Q'
+        // You can find your PROJECT token by visiting
+        // https://studio.plasmic.app/projects/[tTqxxSNNPLamhhbvK9V5UT]/docs/loader#showToken=true
+      }
+    }
+  );
+  const result = await plasmicresponse.json();
     const response = await fetch(
         'https://dklongley.wixstudio.io/papo',
         {
@@ -10,9 +23,9 @@ export async function load(){
           //}
         }
       );
-      const result = await response.text();
+      const wixresult = await response.text();
     return{
-            wixpage:result
+       plasmic:result.html, wixpage:wixresult
     };
 }
 //https://dklongley.wixstudio.io/papo
