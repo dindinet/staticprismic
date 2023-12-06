@@ -11,8 +11,9 @@ export async function load(){
         }
       );
       const paporesult = await response.text();
+
     return{
-            papopage:paporesult.replaceAll('href="/build/_assets', 'href="https://saas-wh3p8.wstd.io/build/_assets')
+            papopage:paporesult.replaceAll('/build/_assets', 'saas-wh3p8.wstd.io/build/_assets')
     };
 }
 
