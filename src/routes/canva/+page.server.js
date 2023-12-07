@@ -9,7 +9,7 @@ export async function load(){
       //const vevresult = result.replaceAll('</body>','<style>#vevwatermark{display:none;}</style></body>')
       
     return{
-            canvasite:canvaresult.replace('<head>','<head><base href="https://www.w3schools.com/" target="_blank"></base>').replaceAll('icon" href="','icon" href="https://brandmessage.my.canva.site/').replaceAll('<img src="images/','<img src="https://brandmessage.my.canva.site/images/')
+            canvasite:canvaresult.replaceAll('<img src="/images/','<img src="https://brandmessage.my.canva.site/images/').replaceAll('icon" href="','icon" href="https://brandmessage.my.canva.site/').replaceAll('<img src="images/','<img src="https://brandmessage.my.canva.site/images/')
     };
 }
 
