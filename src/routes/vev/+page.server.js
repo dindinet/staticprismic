@@ -6,7 +6,6 @@ export async function load(){
         {}
       );
       const vevresult = await response.text();
-      //const vevresult = result.replaceAll('</body>','<style>#vevwatermark{display:none;}</style></body>')
       
     return{
             vevpage:vevresult
