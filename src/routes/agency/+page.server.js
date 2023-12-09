@@ -5,7 +5,7 @@ export async function load(){
           headers: {
             // Your project ID and public API token
             'x-plasmic-api-project-tokens': 'hSiU58ew8y2jNRGtjijM7Z:jMZ15ub1ZJEEGUmVUBKpWPKS3T835s8DZJOOFWTOXEpQhrZd5gugeScUbCUV03uLHmf1q0htVOsn5aqXWDVw'
-            // You can find your PROJECT token by visiting
+            // You can find your PROJECT token by visiting go
             // https://studio.plasmic.app/projects/[tTqxxSNNPLamhhbvK9V5UT]/docs/loader#showToken=true
           }
         }
@@ -15,5 +15,4 @@ export async function load(){
             agency:result.html
     };
 }
-
 
