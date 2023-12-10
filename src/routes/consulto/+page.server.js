@@ -15,4 +15,3 @@ export async function load(){
             consultopage:result.replaceAll('/_next/','https://consulto.dcms.site/_next/').replaceAll('/css/main.css','https://consulto.dcms.site/css/main.css')//.replaceAll('/images/jcogs_img/','https://www.optimadesign.co.uk//images/jcogs_img/')
     };
 }
-
